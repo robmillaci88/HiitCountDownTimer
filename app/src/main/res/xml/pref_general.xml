@@ -1,0 +1,37 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ListPreference
+        android:defaultValue="1 minute"
+        android:dialogIcon="@drawable/ic_timer_icon_use"
+        android:entries="@array/round_time_titles"
+        android:entryValues="@array/round_time_values"
+        android:icon="@drawable/ic_timer_icon_use"
+        android:key="roundsTime"
+        android:negativeButtonText="Cancel"
+        android:positiveButtonText="@null"
+        android:title="Round Time" />
+
+    <ListPreference
+        android:defaultValue="10"
+        android:dialogIcon="@drawable/ic_rounds_use"
+        android:entries="@array/round_titles"
+        android:entryValues="@array/round_values"
+        android:icon="@drawable/ic_rounds_use"
+        android:key="Rounds"
+        android:negativeButtonText="Cancel"
+        android:positiveButtonText="@null"
+        android:title="Number of rounds" />
+
+    <ListPreference
+        android:defaultValue="30"
+        android:dialogIcon="@drawable/ic_rest_use"
+        android:entries="@array/rest_tite"
+        android:entryValues="@array/round_rest_value"
+        android:icon="@drawable/ic_rest_use"
+        android:key="rest"
+        android:negativeButtonText="Cancel"
+        android:positiveButtonText="@null"
+        android:title="Rest Time" />
+
+</PreferenceScreen>

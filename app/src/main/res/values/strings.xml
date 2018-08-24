@@ -1,0 +1,216 @@
+<resources>
+    <string name="app_name">Simple HIIT Timer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="pleaseLeaveARating"><u>Please leave a rating</u></string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+
+    <!-- Example settings for Data & Sync -->
+
+    <string-array name="round_titles">
+        <item>1 round</item>
+        <item>2 rounds</item>
+        <item>3 rounds</item>
+        <item>4 rounds</item>
+        <item>5 rounds</item>
+        <item>6 rounds</item>
+        <item>7 rounds</item>
+        <item>8 rounds</item>
+        <item>9 rounds</item>
+        <item>10 rounds</item>
+        <item>11 rounds</item>
+        <item>12 rounds</item>
+        <item>13 rounds</item>
+        <item>14 rounds</item>
+        <item>15 rounds</item>
+        <item>16 rounds</item>
+        <item>17 rounds</item>
+        <item>18 rounds</item>
+        <item>19 rounds</item>
+        <item>20 rounds</item>
+    </string-array>
+    <string-array name="round_time_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>110</item>
+        <item>120</item>
+        <item>130</item>
+        <item>140</item>
+        <item>150</item>
+        <item>160</item>
+        <item>170</item>
+        <item>180</item>
+        <item>190</item>
+        <item>200</item>
+        <item>210</item>
+        <item>220</item>
+        <item>230</item>
+        <item>240</item>
+        <item>250</item>
+        <item>260</item>
+        <item>270</item>
+        <item>280</item>
+        <item>290</item>
+        <item>300</item>
+    </string-array>
+    <string-array name="round_time_titles">
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>15 seconds</item>
+        <item>20 seconds</item>
+        <item>25 seconds</item>
+        <item>30 seconds</item>
+        <item>35 seconds</item>
+        <item>40 seconds</item>
+        <item>45 seconds</item>
+        <item>50 seconds</item>
+        <item>55 seconds</item>
+        <item>1 minute</item>
+        <item>1 minute 10 seconds</item>
+        <item>1 minute 20 seconds</item>
+        <item>1 minute 30 seconds</item>
+        <item>1 minute 40 seconds</item>
+        <item>1 minute 50 seconds</item>
+        <item>2 minutes</item>
+        <item>2 minute 10 seconds</item>
+        <item>2 minute 20 seconds</item>
+        <item>2 minute 30 seconds</item>
+        <item>2 minute 40 seconds</item>
+        <item>2 minute 50 seconds</item>
+        <item>3 minutes</item>
+        <item>3 minute 10 seconds</item>
+        <item>3 minute 20 seconds</item>
+        <item>3 minute 30 seconds</item>
+        <item>3 minute 40 seconds</item>
+        <item>3 minute 50 seconds</item>
+        <item>4 minutes</item>
+        <item>4 minute 10 seconds</item>
+        <item>4 minute 20 seconds</item>
+        <item>4 minute 30 seconds</item>
+        <item>4 minute 40 seconds</item>
+        <item>4 minute 50 seconds</item>
+        <item>5 minutes</item>
+    </string-array>
+    <string-array name="rest_tite">
+        <item>5</item>
+        <item>10 seconds</item>
+        <item>15 seconds</item>
+        <item>20 seconds</item>
+        <item>25 seconds</item>
+        <item>30 seconds</item>
+        <item>35 seconds</item>
+        <item>40 seconds</item>
+        <item>45 seconds</item>
+        <item>50 seconds</item>
+        <item>55 seconds</item>
+        <item>1 minute</item>
+        <item>1 minute 10 seconds</item>
+        <item>1 minute 20 seconds</item>
+        <item>1 minute 30 seconds</item>
+        <item>1 minute 40 seconds</item>
+        <item>1 minute 50 seconds</item>
+        <item>2 minutes</item>
+        <item>2 minute 10 seconds</item>
+        <item>2 minute 20 seconds</item>
+        <item>2 minute 30 seconds</item>
+        <item>2 minute 40 seconds</item>
+        <item>2 minute 50 seconds</item>
+        <item>3 minutes</item>
+        <item>3 minute 10 seconds</item>
+        <item>3 minute 20 seconds</item>
+        <item>3 minute 30 seconds</item>
+        <item>3 minute 40 seconds</item>
+        <item>3 minute 50 seconds</item>
+        <item>4 minutes</item>
+        <item>4 minute 10 seconds</item>
+        <item>4 minute 20 seconds</item>
+        <item>4 minute 30 seconds</item>
+        <item>4 minute 40 seconds</item>
+        <item>4 minute 50 seconds</item>
+        <item>5 minutes</item>
+    </string-array>
+    <string-array name="round_rest_value">
+    <item>5</item>
+    <item>10</item>
+    <item>15</item>
+    <item>20</item>
+    <item>25</item>
+    <item>30</item>
+    <item>35</item>
+    <item>40</item>
+    <item>45</item>
+    <item>50</item>
+    <item>55</item>
+    <item>60</item>
+    <item>70</item>
+    <item>80</item>
+    <item>90</item>
+    <item>100</item>
+    <item>110</item>
+    <item>120</item>
+    <item>130</item>
+    <item>140</item>
+    <item>150</item>
+    <item>160</item>
+    <item>170</item>
+    <item>180</item>
+    <item>190</item>
+    <item>200</item>
+    <item>210</item>
+    <item>220</item>
+    <item>230</item>
+    <item>240</item>
+    <item>250</item>
+    <item>260</item>
+    <item>270</item>
+    <item>280</item>
+    <item>290</item>
+    <item>300</item>
+    </string-array>
+
+
+    <string-array name="round_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+    <!-- Example settings for Notifications -->
+
+</resources>

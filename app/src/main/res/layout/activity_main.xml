@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.robmillaci.SimpleHIITtimer.MainActivity">
+
+
+    <EditText
+        android:id="@+id/timeText"
+        android:layout_width="297dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="75dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="time"
+        android:selectAllOnFocus="false"
+        android:text="00:00"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="90sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/resetTimer"
+        app:layout_constraintStart_toStartOf="@+id/startTimer"
+        app:layout_constraintTop_toTopOf="@+id/roundCountdownSeekBar" />
+
+    <Button
+        android:id="@+id/startTimer"
+        android:layout_width="64dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/play_btn"
+        android:text="Start Timer"
+        android:textColor="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/restTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/restTitle" />
+
+    <Button
+        android:id="@+id/resetTimer"
+        android:layout_width="65dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/reset_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/restTextView"
+        app:layout_constraintTop_toTopOf="@+id/restTitle" />
+
+    <SeekBar
+        android:id="@+id/timerSeekBar"
+        android:layout_width="273dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/numberOfRoundsSeekBar"
+        android:layout_width="273dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:max="20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerSeekBar" />
+
+    <SeekBar
+        android:id="@+id/restSeekBar"
+        android:layout_width="273dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        android:max="20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberOfRoundsSeekBar" />
+
+    <TextView
+        android:id="@+id/roundTextView"
+        android:layout_width="51dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="1"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textIsSelectable="false"
+        android:textSize="46sp"
+        app:layout_constraintBottom_toBottomOf="@+id/roundCountdownSeekBar"
+        app:layout_constraintEnd_toEndOf="@+id/roundCountdownSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/roundCountdownSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/roundCountdownSeekBar"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/roundsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rounds"
+        app:layout_constraintBottom_toTopOf="@+id/numberOfRoundsSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/numberOfRoundsSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/timerSeekBar" />
+
+    <TextView
+        android:id="@+id/roundTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Round Time"
+        app:layout_constraintBottom_toTopOf="@+id/timerSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/timerSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/timerSeekBar" />
+
+    <TextView
+        android:id="@+id/totalRoundsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/roundCountdownSeekBar"
+        app:layout_constraintStart_toEndOf="@+id/roundCountdownSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/roundCountdownSeekBar"
+        tools:text="OF 12" />
+
+    <ImageView
+        android:id="@+id/roundTimer_minus"
+        android:layout_width="38dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/timerSeekBar"
+        app:layout_constraintEnd_toStartOf="@+id/timerSeekBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timerSeekBar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/minus_btn" />
+
+    <TextView
+        android:id="@+id/restTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:text="REST"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/restCircleSeek"
+        app:layout_constraintEnd_toStartOf="@+id/resetTimer"
+        app:layout_constraintStart_toEndOf="@+id/startTimer"
+        app:layout_constraintTop_toBottomOf="@+id/timeText"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+    <ImageView
+        android:id="@+id/rest_minus"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/restSeekBar"
+        app:layout_constraintEnd_toStartOf="@+id/restSeekBar"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/restSeekBar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/minus_btn" />
+
+    <ImageView
+        android:id="@+id/rounds_minus"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/numberOfRoundsSeekBar"
+        app:layout_constraintEnd_toStartOf="@+id/numberOfRoundsSeekBar"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/numberOfRoundsSeekBar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/minus_btn" />
+
+    <ImageView
+        android:id="@+id/roundTimer_plus"
+        android:layout_width="33dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/timerSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toEndOf="@+id/timerSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/timerSeekBar"
+        app:layout_constraintVertical_bias="0.79"
+        app:srcCompat="@drawable/plus_btn" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="ROUND"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/roundCountdownSeekBar"
+        app:layout_constraintEnd_toStartOf="@+id/roundCountdownSeekBar"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/roundCountdownSeekBar" />
+
+    <ImageView
+        android:id="@+id/rest_plus"
+        android:layout_width="31dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/restSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/restSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/restSeekBar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/plus_btn" />
+
+    <ImageView
+        android:id="@+id/rounds_plus"
+        android:layout_width="31dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/numberOfRoundsSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numberOfRoundsSeekBar"
+        app:layout_constraintTop_toTopOf="@+id/numberOfRoundsSeekBar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/plus_btn" />
+
+    <TextView
+        android:id="@+id/resttimerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rest Time"
+        app:layout_constraintBottom_toTopOf="@+id/restSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/restSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/numberOfRoundsSeekBar" />
+
+    <TextView
+        android:id="@+id/restTextView"
+        android:layout_width="84dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="30"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/restCircleSeek" />
+
+    <SeekBar
+        android:id="@+id/seekBar_volume"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/volumeIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/volumeIcon"
+        app:layout_constraintTop_toBottomOf="@+id/restCircleSeek"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/volumeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restCircleSeek"
+        app:srcCompat="@drawable/ic_volume_up_black_24dp" />
+
+    <ProgressBar
+        android:id="@+id/roundCountdownSeekBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="87dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle_shape"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="65"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/restSeekBar" />
+
+    <ProgressBar
+        android:id="@+id/restCircleSeek"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="125dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/circle_shape"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="65"
+        android:progressDrawable="@drawable/circular_progress_bar_green"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_container"
+        app:layout_constraintEnd_toStartOf="@+id/resetTimer"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toEndOf="@+id/startTimer"
+        app:layout_constraintTop_toBottomOf="@+id/timeText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
